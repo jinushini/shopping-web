@@ -1,0 +1,181 @@
+<!-- G51WPS coursework-->
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+ 
+  <title>Custom T-Shirt</title>
+
+  <link rel="stylesheet" type = "text/css" href = "layout.css">
+  	<script type = "text/javascript">
+	function changeFont(ftSize){
+			document.getElementById("tx").style.fontSize=ftSize;
+	}
+	function changeColor(ftColor){
+			document.getElementById("tx").style.color=ftColor;
+	}
+	function changeStyle(ftStyle){
+			document.getElementById("tx").style.fontFamily=ftStyle;
+	}
+	function designChoice(image){
+	  
+	  	  switch (image) {
+          case "tshirt1": 
+            document.getElementById("1").src = "t1.jpg";
+			document.getElementById("2").value = "Che ·Guevara"; 
+            break;
+          case "tshirt2": 
+             document.getElementById("1").src = "t2.png";
+			 document.getElementById("2").value = "angel wing"; 
+            break; 
+           case "tshirt3":
+            document.getElementById("1").src = "t3.jpg";
+			document.getElementById("2").value = "queen"; 
+            break;    
+			           case "tshirt4":
+            document.getElementById("1").src = "t4.png";
+			document.getElementById("2").value = "butterfly"; 
+            break;    
+			           case "tshirt5":
+            document.getElementById("1").src = "t5.jpg";
+			document.getElementById("2").value = "Hawaii"; 
+            break;    
+	  }
+	  
+	  }	 
+	   function colorChoice(color){
+	  
+	  	 	 switch (color) {
+          	case "red": 
+            document.getElementById("4").bgColor="#cc2900";
+			break;
+          	case "black": 
+             document.getElementById("4").bgColor="#000000";
+
+            break; 
+           	case "white":
+            document.getElementById("4").bgColor="#FFFFFF";
+			break;    
+			case "green":
+            document.getElementById("4").bgColor="#00FF00";
+			break; 
+			
+			case "blue":
+            document.getElementById("4").bgColor="#6A6AFF";
+			break; 	
+			case "yellow":
+            document.getElementById("4").bgColor="#FFFF37";
+			break; 	
+			case "pink":
+            document.getElementById("4").bgColor="#FF80C0";
+			break; 	
+			case "purple":
+            document.getElementById("4").bgColor="#FF00FF";
+			break; 	
+	
+	  }
+	  
+	  }
+
+</script>
+
+</head>
+<body>
+
+<div id="container">
+<div id="logo">
+     <img src="logo.png" width="451" height="62" alt="logo">
+</div>  
+<div id="logo">
+
+  <p><a class="menuBar"href="yinwenliang.html">CUSTOMISE</a><a class="menuBar"href="order.html">ORDER</a></p>
+</div>
+  <div id="rightcolumn">
+    <table width="861" height="796" border="0">
+ 
+    <tr>
+      <td height="22" colspan="4"><img src="cloth.jpg" width="851" height="198" alt="cloth"> <hr/></td>
+    </tr>
+    <tr>
+      <td height="93" colspan="4"><p><strong>Click the picture below will put on your T-Shirt</strong>:
+        <input type = "text" id = "2" value ="This is Design 1">
+      </p>
+      
+          <input type ="image" src ="t1.jpg" width="100"height="110" onClick = 'designChoice("tshirt1");'>
+          <input type ="image" src ="t11.jpg" width="100"height="100" onClick = 'designChoice("tshirt2");'>
+          <input type ="image" src ="t3.jpg" width="100"height="110" onClick = 'designChoice("tshirt3");'>
+          <input type ="image" src ="t4.jpg" width="100"height="80" onClick = 'designChoice("tshirt4");'>
+          <input type ="image" src ="t5.jpg" width="100"height="80" onClick = 'designChoice("tshirt5");'>
+          <br />
+        <hr/></td>
+    </tr>
+    <tr>
+      <td width="470" height="560" rowspan="7" background =" background10.png" id="4"><div id="style"> <img id="1" src="t1.jpg" alt="sofa" width="200"height="220" ></div>
+        <div id="style2">
+          <textarea name="text" id = "tx" cols="14" rows="2" style="background-color:transparent;border-color:transparent;overflow:hidden;resize:none" width="200">HERE!TYPE WORDS</textarea>
+      </div></td>
+      <td height="60" colspan="3"><p><strong>Choose the colour of your T-Shirt: </strong></p>
+        <img src="simplicio_049.png" alt="" width="67" height="73">
+          <input type ="image" src ="c1.png" width="20"height="20"  onClick = 'colorChoice("red");'>
+          <input type ="image" src ="c2.png" width="20"height="20"  onClick = 'colorChoice("black");'>
+          <input type ="image" src ="c3.png" width="20"height="20"  onClick = 'colorChoice("white");'>
+          <input type ="image" src ="c4.png" width="20"height="20"  onClick = 'colorChoice("green");'>
+          <input type ="image" src ="c5.png" width="20"height="20"  onClick = 'colorChoice("blue");'>
+          <input type ="image" src ="c6.png" width="20"height="20"  onClick = 'colorChoice("yellow");'>
+          <input type ="image" src ="c7.png" width="20"height="20"  onClick = 'colorChoice("pink");'>
+          <input type ="image" src ="c8.png" width="20"height="20"  onClick = 'colorChoice("purple");'>
+        <hr/>
+       </td>
+    </tr>
+    <form action="file:///D:/Program/WEB/cw/order.html" method="post">
+      <tr>
+        <td width="134" height="61"><p>Font size</p>
+          <p>
+            <select  name ="FtSize" onChange="changeFont(value)">
+              <option value ="10px">10pt</option>
+              <option value ="14px">14pt</option>
+              <option value ="18px">18pt</option>
+			  <option value ="20px">20pt</option>
+			  <option value ="22px">22pt</option>
+            </select>
+          </p></td>
+        <td width="110"><p>Font Color </p>
+          <p>
+            <select  name ="FtColor" onChange="changeColor(value)">
+              <option value ="#6A6AFF">Blue</option>
+              <option value ="#FFFF37">yellow</option>
+              <option value ="#00FF00">green</option>
+			  <option value ="#cc2900">red</option>
+			  <option value ="#000000">black</option>
+            </select>
+          </p></td>
+        <td width="129"><p>Font Style</p>
+          <p>
+            <select  name ="FtStyle" onChange="changeStyle(value)">
+              <option value ="Verdana, Geneva, sans-serif">Verdana</option>
+              <option value ="'Times New Roman', Times, serif">Times Roman</option>
+              <option value ="'Arial Black', Gadget, sans-serif">Arial</option>
+            </select>
+          </p></td>
+      </tr>
+      
+      <tr>
+        <td height="185" colspan="3">
+        <hr/>
+    
+          <p><a href="order.html"><img src="next.png" width="259" height="51" alt="next"></a>
+        </p>
+       <hr/></td>
+      </tr>
+    </form>
+    </table>
+    <hr/>
+
+</form>
+</div>
+	<div id="footer">
+  
+  <p> Copyright &copy; 2013 WENLIANG YIN's website<br>
+  <a href="mailto:jake@jcoffee.com">itxwy3@nottingham.ac.uk</a></p>
+	</div>
+</body>
+</html>

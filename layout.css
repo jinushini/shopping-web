@@ -1,0 +1,79 @@
+  <style type="text/css">
+	textarea {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: large;
+	font-style: italic;
+	font-weight: normal;
+	float: left;
+	height: 40px;
+	width: 200px;
+	padding: 10px;
+	top: 300px;
+	left: 500px;
+	right: 400px;
+	bottom: 1000px;
+}
+	img {float: 50px;}
+	body {
+	font-family: Verdana, Arial, sans-serif;
+
+	background-color: #999;
+     	}
+	#container {
+	margin: auto;
+	width: 70%;
+	min-width: 700px;
+	background-color: #333;			
+	    
+	    
+}
+
+	#rightcolumn {
+	width: 850px;
+	padding: 10px;
+	height: 1000px;
+	background-position: center;
+	background-image: url(background1.jpg);
+	background-repeat: no-repeat;
+	}
+	#logo {
+	padding: 10px;
+	text-align: left;
+	display: inline;
+	font-style: italic;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	}
+	.menuBar{
+	text-decoration: none;
+	margin: 15px;
+	display: inline;
+	}
+	.floatright {margin: 10px;
+	             float: right;
+	}
+	#footer {
+	font-size: xx-small;
+	text-align: center;
+	background-color: #333333;
+	margin: auto;
+	padding: 10px;
+	}
+
+    #logo h1 {
+	color: #FFFFFF;
+	}
+	
+	#style {
+	position: absolute;
+	left: 399px;
+	top: 765px;
+}
+	#style2{
+	position: absolute;
+	left: 425px;
+	top: 707px;
+	}
+
+  </style>
